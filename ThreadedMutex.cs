@@ -24,7 +24,7 @@ namespace XP.ThreadedMutex
     /// <summary>
     /// Implements a named mutex that holds the lock in a dedicated thread.
     /// </summary>
-    public class ThreadedMutex : IDisposable
+    public sealed class ThreadedMutex : IDisposable
     {
         private readonly string _name;
         private readonly ManualResetEvent _manualResetEvent;
